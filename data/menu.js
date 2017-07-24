@@ -16,14 +16,14 @@ var menus = [{
             "id":"013",
             "pid":"01",
             "icon":"",
-            "name":"添加表单页1",
+            "name":"表单页1",
             "uri":"view/add1.html",
             "childrens":[]
         },{
             "id":"014",
             "pid":"01",
             "icon":"",
-            "name":"添加表单页2",
+            "name":"表单页2",
             "uri":"view/add2.html",
             "childrens":[]
         }
