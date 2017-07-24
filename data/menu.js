@@ -9,16 +9,8 @@ var menus = [{
             "id":"012",
             "pid":"01",
             "icon":"",
-            "name":"数据列表页1",
+            "name":"数据列表页",
             "uri":"view/list2.html",
-            "childrens":[]
-        },
-        {
-            "id":"011",
-            "pid":"01",
-            "icon":"",
-            "name":"数据列表页2",
-            "uri":"view/list1.html",
             "childrens":[]
         },{
             "id":"013",
