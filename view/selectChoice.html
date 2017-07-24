@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="renderer" content="webkit">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/font-awesome.css" />
+        <link rel="stylesheet" type="text/css" href="../css/ace/ace.css" />
+        <link rel="stylesheet" type="text/css" href="../css/plugins/select2/select2.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/plugins/select2/select2-bootstrap.min.css"/>
+        <link rel="stylesheet" href="../css/custom.css" />
+
+        <!--[if lt IE 9]>
+          <script src="../plugins/html5shiv.min.js"></script>
+          <script src="../plugins/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="page-content">
+            <div class="panel panel-line">
+                <div class="panel-heading">
+                    <h3 class="panel-title">下拉选择展示</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group form-line-input">
+                                <label for="singleSelect" class="control-label">select2下拉单选</label>
+                                <select id="singleSelect" class="form-control select2">
+                                    <option></option>
+                                    <optgroup label="类型一">
+                                        <option value="01">选项1</option>
+                                        <option value="02" disabled="disabled">选项2</option>
+                                    </optgroup>
+                                    <optgroup label="类型二">
+                                        <option value="11">选项一</option>
+                                        <option value="12">选项二</option>
+                                        <option value="13">选项三</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group form-line-input">
+                                <label for="multiSelect" class="control-label">select2下拉多选</label>
+                                <select id="multiSelect"  class="form-control  select2-multiple" multiple>
+                                    <option></option>
+                                    <optgroup label="类型一">
+                                        <option value="01">选项1</option>
+                                        <option value="02">选项2</option>
+                                    </optgroup>
+                                    <optgroup label="类型二">
+                                        <option value="11">选项一</option>
+                                        <option value="12">选项二</option>
+                                        <option value="13">选项三</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group form-line-input">
+                                <label for="multiSelect" class="control-label">select2下拉树选</label>
+                                <select id="multiSelect"  class="form-control  select2">
+                                    <option></option>
+                                    <optgroup label="类型一">
+                                        <option value="01">选项1</option>
+                                        <option value="02">选项2</option>
+                                    </optgroup>
+                                    <optgroup label="类型二">
+                                        <option value="11">选项一</option>
+                                        <option value="12">选项二</option>
+                                        <option value="13">选项三</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions text-center">
+                        <button type="button" id="submitBtn" class="btn btn-danger"><i class="ace-icon fa fa-check bigger-110"></i> 提交</button>
+                        <button type="reset" class="btn"><i class="ace-icon fa fa-refresh bigger-110"></i> 重置</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../plugins/select2/select2.full.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../plugins/select2/zh-CN.js" type="text/javascript" charset="utf-8"></script>
+        <!--<script src="../plugins/select2/select2.extend.min.js" type="text/javascript" charset="utf-8"></script>-->
+        <script src="../js/app.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            $.fn.select2.defaults.set("theme", "bootstrap");
+            var placeholder = "请选择";
+            var $singleSelect = $("#singleSelect").select2({
+                placeholder: placeholder,
+                minimumResultsForSearch: -1,
+                width: null
+            });
+            var $multiSelect = $("#multiSelect").select2({
+                placeholder: placeholder,
+                minimumResultsForSearch: -1,
+                width: null
+            });
+        	$('#submitBtn').click(function(){
+        	    //var single = $singleSelect.val();
+        	    
+        	})
+        </script>
+    </body>
+
+</html>

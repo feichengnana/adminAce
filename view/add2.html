@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="renderer" content="webkit">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="../css/ace/ace.css" />
+		<link rel="stylesheet" href="../css/custom.css" />
+
+		<!--[if lt IE 9]>
+		  <script src="../plugins/html5shiv.min.js"></script>
+		  <script src="../plugins/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="page-content">
+			<div class="panel panel-line">
+				<div class="panel-heading">
+					<h3 class="panel-title">工单编制</h3>
+				</div>
+				<div class="panel-body">
+					<form action="">
+						<div class="dividerBox dividerBox-spinner dividerBox-blue">
+							<div class="dividerBox-toolbar">
+								<a href="javascript:;" class="btn btn-white btn-info text-center dividerBox-tool-angle"><i class="ace-icon fa fa-angle-up"></i></a>
+							</div>
+							<div class="dividerBox-title"><span>工单相关</span></div>
+							<div class="dividerBox-body">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group form-line-input">
+											<label for="11proName">工单名称 <i class="fa fa-asterisk text-red"></i></label>
+											<input type="text" class="form-control" id="11proName" placeholder="工程订单名称">
+											<span class="help-block"></span>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="form-group form-line-input has-success">
+											<label for="11proCode">项目编码</label>
+											<input type="text" class="form-control" id="11proCode" placeholder="编码格式：xxx-xx">
+											<span class="help-block">工单名称为必填项</span>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="form-group form-line-input has-warning">
+											<label for="11buildScene">建设性质 <i class="fa fa-asterisk text-red"></i></label>
+											<select name="" class="form-control" id="11buildScene" name="buildScene">
+												<option selected="" value="">请选择</option>
+												<option value="">新建</option>
+												<option value="">改造</option>
+												<option value="">扩容</option>
+											</select>
+											<span class="help-block">工单名称为必填项</span>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="form-group form-line-input has-error">
+											<label for="11cityName">地市</label>
+											<input type="text" class="form-control" id="11cityName" placeholder="">
+											<span class="help-block">工单名称为必填项</span>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="form-group form-line-input has-success">
+											<label for="11disName">区县 <i class="fa fa-asterisk text-red"></i></label>
+											<input type="text" class="form-control" id="11disName" placeholder="所属区县">
+											<span class="help-block">工单名称为必填项</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dividerBox dividerBox-spinner dividerBox-green">
+							<div class="dividerBox-toolbar">
+								<a href="javascript:;" class="btn btn-white btn-primary text-center dividerBox-tool-angle"><i class="ace-icon fa fa-angle-up"></i></a>
+							</div>
+							<div class="dividerBox-title"><span>承接相关</span></div>
+							<div class="dividerBox-body">
+								<div class="row">
+									<div class="col-sm-3">
+										<div class="form-group form-line-input">
+											<label for="11providerUserName">工单接收人 <i class="fa fa-asterisk text-red"></i></label>
+											<input type="text" class="form-control" id="11providerUserName" placeholder="工单接收人">
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="form-group form-line-input">
+											<label for="11providerName">工程服务商</label>
+											<input type="text" class="form-control" id="11providerName" placeholder="工程服务商">
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="form-group form-line-input">
+											<label for="11buildType">建设时限 <i class="fa fa-asterisk text-red"></i></label>
+											<select name="" class="form-control" id="11buildType" name="buildType">
+												<option selected="" value="">请选择</option>
+												<option value="">7天</option>
+												<option value="">55天</option>
+												<option value="">其他</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="form-group form-line-input">
+											<label for="11proDate">归属工期 <i class="fa fa-asterisk text-red"></i></label>
+											<input type="text" class="form-control" id="11proDate" placeholder="请先选择建设时限">
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="form-group form-line-input">
+											<label for="11proManagerName">项目经理</label>
+											<input type="text" class="form-control" id="11proManagerName" placeholder="项目经理">
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="form-group form-line-input">
+											<label for="11proManagerTel">项目经理联系方式 <i class="fa fa-asterisk text-red"></i></label>
+											<input type="text" class="form-control" id="11proManagerTel" placeholder="项目经理联系方式">
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="form-group form-line-input">
+											<label for="11pdmTime">设计完成时限 <i class="fa fa-asterisk text-red"></i></label>
+											<input type="text" class="form-control" id="11pdmTime" placeholder="设计完成时限">
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="form-group form-line-input">
+											<label for="11xqTouzi">前评估投资(元) <i class="fa fa-asterisk text-red"></i></label>
+											<input type="text" class="form-control" id="11xqTouzi" placeholder="前评估投资">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dividerBox dividerBox-spinner dividerBox-red">
+							<div class="dividerBox-toolbar">
+								<a href="javascript:;" class="btn btn-white btn-primary text-center dividerBox-tool-angle"><i class="ace-icon fa fa-angle-up"></i></a>
+							</div>
+							<div class="dividerBox-title"><span>工单描述及附件</span></div>
+							<div class="dividerBox-body">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group form-line-input">
+											<label for="proDesc">工单描述 <i class="fa fa-asterisk text-red"></i> <small class="text-red">（注意：工单描述要包含以下内容：建设地点及当前现状、建设性质、接入方式、主要建设内容及规模、建设时限要求。）</small></label>
+											<textarea id="proDesc" name="proDesc" rows="3" cols="" placeholder="工单描述要包含以下内容：建设地点及当前现状、建设性质、接入方式、主要建设内容及规模、建设时限要求。"></textarea>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dividerBox dividerBox-spinner dividerBox-yellow">
+							<div class="dividerBox-toolbar">
+								<a href="javascript:;" class="btn btn-white btn-primary text-center dividerBox-tool-angle"><i class="ace-icon fa fa-angle-up"></i></a>
+							</div>
+							<div class="dividerBox-title"><span>工单描述及附件</span></div>
+							<div class="dividerBox-body">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group form-line-input">
+											<label for="proDesc">工单描述 <i class="fa fa-asterisk text-red"></i> <small class="text-red">（注意：工单描述要包含以下内容：建设地点及当前现状、建设性质、接入方式、主要建设内容及规模、建设时限要求。）</small></label>
+											<textarea id="proDesc" name="proDesc" rows="3" cols="" placeholder="工单描述要包含以下内容：建设地点及当前现状、建设性质、接入方式、主要建设内容及规模、建设时限要求。"></textarea>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-actions text-center">
+							<button type="submit" class="btn btn-danger"><i class="ace-icon fa fa-check bigger-110"></i> 提交</button>
+							<button type="reset" class="btn"><i class="ace-icon fa fa-refresh bigger-110"></i> 重置</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="../js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/app.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>

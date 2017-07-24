@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="renderer" content="webkit">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/font-awesome.css" />
+        <link rel="stylesheet" type="text/css" href="../css/ace/ace.css" />
+        <link rel="stylesheet" href="../css/custom.css" />
+
+        <!--[if lt IE 9]>
+          <script src="../plugins/html5shiv.min.js"></script>
+          <script src="../plugins/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="page-content">
+            <div class="panel panel-line">
+                <div class="panel-heading">
+                    <h3 class="panel-title">固定格式文本</h3>
+                </div>
+                <div class="panel-body">
+                	<h3>基于inputmask.js</h3>
+                	<div class="row">
+                		<div class="col-xs-6">
+                			<h5>Options:</h5>
+	                		<table class="table table-bordered">
+	                			<tr>
+	                				<td>name</td>
+	                				<td>type</td>
+	                				<td>default</td>
+	                				<td>描述</td>
+	                			</tr>
+	                			<tr>
+	                				<td>mask</td>
+	                				<td>string</td>
+	                				<td>''</td>
+	                				<td>格式化字符串，可比对的字符见Format表</td>
+	                			</tr>
+	                			<tr>
+	                				<td>placeholder</td>
+	                				<td>string</td>
+	                				<td>'_'</td>
+	                				<td>输入框中显示的字符</td>
+	                			</tr>
+	                		</table>
+	                		<pre>
+$('.inputmask').inputmask({
+  mask: '999-99-999-9999-9'
+})</pre>
+                		</div>
+	                	<div class="col-xs-6">
+	                		<h5>Format:匹对类型</h5>
+	                		<table class="table table-bordered">
+	                			<tr>
+	                				<td>Character</td>
+	                				<td>Description</td>
+	                			</tr>
+	                			<tr>
+	                				<td>9</td>
+	                				<td>Number</td>
+	                			</tr>
+	                			<tr>
+	                				<td>a</td>
+	                				<td>Letter</td>
+	                			</tr>
+	                			<tr>
+	                				<td>w</td>
+	                				<td>Alphanumeric</td>
+	                			</tr>
+	                			<tr>
+	                				<td>*</td>
+	                				<td>任何字符</td>
+	                			</tr>
+	                			<tr>
+	                				<td>?</td>
+	                				<td>0~1个可选字符</td>
+	                			</tr>
+	                		</table>
+	                	</div>
+                	</div>
+                	<div class="dividerBox dividerBox-primary dividerBox-blue">
+                        <div class="dividerBox-title"><span>数字格式</span></div>
+                        <div class="dividerBox-body">
+                        	<div class="row">
+		                        <div class="col-sm-6">
+		                            <div class="form-group form-line-input">
+										<label for="proCode">日期-y/m/d</label>
+										<input type="text" id="mask_date" class="form-control" placeholder="y/m/d">
+										<span class="help-block"></span>
+									</div>
+		                        </div>
+		                        <div class="col-sm-6">
+		                            <div class="form-group form-line-input">
+										<label for="proCode">日期-逐字变更</label>
+										<input type="text" id="mask_date1" class="form-control" placeholder="yyyy/mm/dd">
+										<span class="help-block"></span>
+									</div>
+		                        </div>
+		                        <div class="col-sm-6">
+		                            <div class="form-group form-line-input">
+										<label for="proCode">手机</label>
+										<input type="text" id="mask_mobile" class="form-control" placeholder="(0) 999-9999-9999">
+										<span class="help-block"></span>
+									</div>
+		                        </div>
+		                        <div class="col-sm-6">
+		                            <div class="form-group form-line-input">
+										<label for="proCode">电话</label>
+										<input type="text" id="mask_phone" class="form-control" placeholder="(999) 999-99999">
+										<span class="help-block"></span>
+									</div>
+		                        </div>
+		                        <div class="col-sm-6">
+		                            <div class="form-group form-line-input">
+										<label for="proCode">数字</label>
+										<input type="text" id="mask_number" class="form-control">
+										<span class="help-block">mask "9" or mask "99" or ... mask "9999999999"</span>
+									</div>
+		                        </div>
+		                        <div class="col-sm-6">
+		                            <div class="form-group form-line-input">
+										<label for="proCode">货币金额</label>
+										<input type="text" id="mask_currency" class="form-control">
+										<span class="help-block">123456 => ￥ ___.__1.234,56</span>
+									</div>
+		                        </div>
+		                    </div>
+                    	</div>
+                    </div>
+                	<div class="dividerBox dividerBox-primary dividerBox-green">
+                        <div class="dividerBox-title"><span>IP地址</span></div>
+                        <div class="dividerBox-body">
+                        	<div class="row">
+		                        <div class="col-sm-6">
+		                            <div class="form-group form-line-input">
+										<label for="proCode">IPV4</label>
+										<input type="text" id="input_ipv4" class="form-control" placeholder="y/m/d">
+										<span class="help-block">192.168.120.150</span>
+									</div>
+		                        </div>
+		                        <div class="col-sm-6">
+		                            <div class="form-group form-line-input">
+										<label for="proCode">IPV6</label>
+										<input type="text" id="input_ipv6" class="form-control" placeholder="yyyy/mm/dd">
+										<span class="help-block">3ffe:1900:4545:3:200:f8ff:fe21:67cf</span>
+									</div>
+		                        </div>
+		                        
+		                    </div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../plugins/jquery-inputmask/jquery.inputmask.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../plugins/jquery.input-ip-address-control-1.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script src="inputMsk.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+
+</html>
