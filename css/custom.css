@@ -13,6 +13,8 @@ html,body,.page-content{
 a:hover{
 	text-decoration: none;
 }
+.form-control{border-color: #C2CAD8;border-radius: 0 !important;}
+.input-group .input-group-addon{border-radius: 0!important;}
 .table-bordered>tbody>tr>td{
     border: 1px solid #ddd;
 }
@@ -21,6 +23,9 @@ a:hover{
 .list-group-item.bg-warning{background-color: #fcf8e3;}
 .list-group-item.bg-success{background-color: #dff0d8;}
 .dataTables_wrapper.no-footer .dataTables_scrollBody{border-bottom-color: #DDDDDD;}
+.input-group .form-control{border-radius: 0 !important;}
+.no-skin .sidebar{overflow-y: auto;}
+.no-skin .sidebar.menu-min{overflow: inherit;}
 /* 页面初始化/ */
 
 
@@ -29,12 +34,15 @@ a:hover{
 .bg-main {
 	background: #d11718 !important;
 }
+.bg-white{
+	background-color: #FFF!important;
+}
 .btn-circle{
 	border-radius: 25px !important;
 	overflow: hidden;
 }
 .alert-mini{padding:10px;margin-bottom: 15px;}
-.text-red{color: #D11718;}
+.text-red{color: #E43A45;}
 /* 公共类/ */
 
 
@@ -327,7 +335,7 @@ nav.page-tabs .page-tabs-content {
     margin: 0 0 12px;
     border-bottom: 1px dotted #E2E2E2;
     padding:12px 8px 8px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: lighter;
     line-height: 1.2;
 }
@@ -383,6 +391,7 @@ nav.page-tabs .page-tabs-content {
 .dividerBox.dividerBox-spinner>.dividerBox-toolbar>a{
     top:0;
     margin-left: 0;
+    padding:2px 8px;
 }
 .dividerBox.dividerBox-spinner>.dividerBox-body{padding:0 15px;}
 /* dividerBox颜色设置 */
@@ -407,8 +416,7 @@ nav.page-tabs .page-tabs-content {
 }
 .dividerBox.dividerBox-spinner.dividerBox-yellow>.dividerBox-title,
 .dividerBox.dividerBox-primary.dividerBox-yellow>.dividerBox-title>span{
-    background-color: #F1C40F;
-    color: #111;
+    background-color: #F4D03F;
 }
 .dividerBox.dividerBox-primary.dividerBox-blue>.dividerBox-title{border-bottom-color:#659BE0 }
 .dividerBox.dividerBox-primary.dividerBox-green>.dividerBox-title{border-bottom-color:#36C6D3 }
@@ -417,7 +425,7 @@ nav.page-tabs .page-tabs-content {
 /* 表单间隔-end */
 
 /* 表单 */
-.form-group .fa-asterisk{font-size: 12px;}
+.form-group .fa-asterisk{font-size: 10px;vertical-align: middle;margin-top: -2px;}
 .form-group.form-line-input{position:relative;margin-bottom: 30px;}
 .form-group.form-line-input label{margin-bottom: 0;color: #888;}
 .form-group.form-line-input .form-control,.form-group.form-line-input input,.form-group.form-line-input select,.form-group.form-line-input textarea{
@@ -1016,3 +1024,8 @@ a.travis {
 	padding:15px;
 	margin-bottom: 10px;
 }
+
+/*补充表单样式 */
+.input-group .input-group-btn>.btn{border:none;padding-top: 5px;padding-bottom: 5px;}
+/*补充表单样式-end */
+

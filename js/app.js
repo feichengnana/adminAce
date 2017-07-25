@@ -10,25 +10,27 @@ function panelAction(el,parentEl,bodyEl,icon1,icon2,times){
 	$(el).click(function(){
 		var me = $(this);
 		var pnode = me.closest(parentEl);
-		var pbody = pnode.find(bodyEl);
+		var pbody = pnode.nextAll(bodyEl).first();
 		var meicon = me.find('.fa');
+		console.log(meicon.attr('class'))
 		if(times!=0){
 			times = times?times:200;
 		}
 		pbody.slideToggle(times);
 		meicon.toggleClass(icon1).toggleClass(icon2);
+		console.log(meicon.attr('class'))
 	})
 }
 
 $(function(){
 	if($('.panel-tools-collapse').length){
-		panelAction('.panel-tools-collapse','.panel','.panel-body','fa-chevron-up','fa-chevron-down');
+		panelAction('.panel-tools-collapse','.panel-heading','.panel-body','fa-chevron-up','fa-chevron-down');
 	}
 	if($('.panel-search-more').length){
-		panelAction('.panel-search-more a','.panel-search-form','.panel-search-moreBody','fa-angle-double-right','fa-angle-double-up',0);
+		panelAction('.panel-search-more a','.panel-search-more','.panel-search-moreBody','fa-angle-double-right','fa-angle-double-up',0);
 	}
 	if($('.dividerBox-tool-angle').length){
-		panelAction('.dividerBox-tool-angle','.dividerBox','.dividerBox-body','fa-angle-up','fa-angle-down');
+		panelAction('.dividerBox-tool-angle','.dividerBox-toolbar','.dividerBox-body','fa-angle-up','fa-angle-down');
 	}
 	
 	$('.panel-tools-close').click(function(){
