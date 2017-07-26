@@ -1029,3 +1029,11 @@ a.travis {
 .input-group .input-group-btn>.btn{border:none;padding-top: 5px;padding-bottom: 5px;}
 /*补充表单样式-end */
 
+/*补充有图标的表单 */
+.input-icon{position: relative;left: 0;}
+.input-icon>i{position: absolute;margin: 7px 2px 4px 10px;z-index: 3;width: 16px;font-size: 16px;text-align: center;left: 0;color: #ccc;}
+.input-icon .form-control{padding-left: 33px;}
+.input-icon.right{left: auto;right: 0;}
+.input-icon.right>i{left: auto;right: 8px;float: right;}
+.input-icon.right>.form-control{padding-right: 33px;padding-left: 4px;}
+/*补充有图标的表单-end */

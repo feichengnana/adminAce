@@ -16,15 +16,22 @@ var menus = [{
             "id":"013",
             "pid":"01",
             "icon":"",
-            "name":"表单页1",
+            "name":"表单分隔1",
             "uri":"view/add1.html",
             "childrens":[]
         },{
             "id":"014",
             "pid":"01",
             "icon":"",
-            "name":"表单页2",
+            "name":"表单分隔2",
             "uri":"view/add2.html",
+            "childrens":[]
+        },{
+            "id":"0143",
+            "pid":"01",
+            "icon":"",
+            "name":"弹出表单",
+            "uri":"view/addModal.html",
             "childrens":[]
         }
 
@@ -33,7 +40,7 @@ var menus = [{
     "id":"02",
     "pid":"1",
     "icon":"glyphicon-align-justify",
-    "name":"常见组件",
+    "name":"全局CSS样式",
     "uri":"",
     "childrens":[
         {
@@ -54,38 +61,16 @@ var menus = [{
             "id":"021",
             "pid":"02",
             "icon":"",
-            "name":"样式组件",
-            "uri":"view/cssGroup.html",
-            "childrens":[]        
-        },{
-            "id":"021",
-            "pid":"02",
-            "icon":"",
             "name":"工具类",
             "uri":"view/funClass.html",
             "childrens":[]        
         }
-//      ,{
-//          "id":"021",
-//          "pid":"02",
-//          "icon":"",
-//          "name":"开关",
-//          "uri":"view/swiches.html",
-//          "childrens":[]        
-//      },{
-//          "id":"021",
-//          "pid":"02",
-//          "icon":"",
-//          "name":"信息弹窗",
-//          "uri":"",
-//          "childrens":[]        
-//      }
     ]
 },{
     "id":"03",
     "pid":"1",
     "icon":"glyphicon-credit-card",
-    "name":"表单相关",
+    "name":"常用组件",
     "uri":"",
     "childrens":[
         {

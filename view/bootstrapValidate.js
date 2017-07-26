@@ -7,6 +7,12 @@
 });
 $('#validForm').bootstrapValidator({
     message:'校验未通过',
+    container: 'popover',
+    feedbackIcons: {
+        valid: 'glyphicon',
+        invalid: 'glyphicon',
+        validating: 'glyphicon'
+    },
     fields:{
         limitStr:{
             validators:{
@@ -158,7 +164,7 @@ $('#validForm').bootstrapValidator({
                 },
                 file:{
                     extension: 'pdf',
-                    type: 'application/pdf',
+                    type: 'application/pdf/jpg/png',
                     minSize: 1024*1024,
                     maxSize: 10*1024*1024,
                     message:'只能上传1M~10M之间的pdf文件'
@@ -172,7 +178,18 @@ $('#validForm').bootstrapValidator({
                 message: '名称不可用',
                 delay: 1000
             }
-        },
+        }
+    }
+})
+$('#validForm2').bootstrapValidator({
+    message:'校验未通过',
+    container: 'tooltip',
+    feedbackIcons: {
+        valid: 'glyphicon',
+        invalid: 'glyphicon',
+        validating: 'glyphicon'
+    },
+    fields:{
         onlyChinese:{
             validators:{
                 chinese:{}
@@ -180,12 +197,7 @@ $('#validForm').bootstrapValidator({
         },
         onlyEnglish:{
             validators:{
-                chinese:{}
-            }
-        },
-        onlyEnglish:{
-            validators:{
-                chinese:{}
+                english:{}
             }
         },
         phoneNumber:{
