@@ -33,11 +33,9 @@ $('#dataTable').dataTable({
 	"bAutoWidth": false,
 	"scrollCollapse": true,
 	'scrollX': true,
-	//"sScrollY": ($(window).height() - 400),
-	//"iDisplayLength":1,
-	//	'fixedColumns': {
-	//		'leftColumns': 2
-	//	},
+//	'fixedColumns': {
+//		'leftColumns': 2
+//	},
 	"language": {
 		"emptyTable": "没有关联的需求信息!",
 		"thousands": ","
@@ -126,5 +124,4 @@ $('#dataTable').dataTable({
 		"defaultContent": ''
 	}],
 	"dom": 'rt<"floatl mt5"i><"floatr mt5"p><"clear">' //生成样式
-
 });
