@@ -6,13 +6,9 @@
     todayBtn: true
 });
 $('#validForm').bootstrapValidator({
+	live: 'enabled',
     message:'校验未通过',
     container: 'popover',
-    feedbackIcons: {
-        valid: 'glyphicon',
-        invalid: 'glyphicon',
-        validating: 'glyphicon'
-    },
     fields:{
         limitStr:{
             validators:{

@@ -394,10 +394,10 @@ if (typeof jQuery === 'undefined') {
                             .on('focus.container.bv', function() {
                                 switch (container) {
                                     case 'tooltip':
-                                        $(this).data('bv.icon').tooltip('show');
+                                        $(this).tooltip('show');
                                         break;
                                     case 'popover':
-                                        $(this).data('bv.icon').popover('show');
+                                        $(this).popover('show');
                                         break;
                                     default:
                                         break;
@@ -408,10 +408,10 @@ if (typeof jQuery === 'undefined') {
                             .on('blur.container.bv', function() {
                                 switch (container) {
                                     case 'tooltip':
-                                        $(this).data('bv.icon').tooltip('hide');
+                                        $(this).tooltip('hide');
                                         break;
                                     case 'popover':
-                                        $(this).data('bv.icon').popover('hide');
+                                        $(this).popover('hide');
                                         break;
                                     default:
                                         break;
@@ -867,6 +867,7 @@ if (typeof jQuery === 'undefined') {
          * @returns {BootstrapValidator}
          */
         validateField: function(field) {
+        	console.log(11);
             var fields = $([]);
             switch (typeof field) {
                 case 'object':
@@ -962,7 +963,7 @@ if (typeof jQuery === 'undefined') {
                     }
                 }
             }
-
+			console.log(this);
             return this;
         },
 
@@ -1122,27 +1123,28 @@ if (typeof jQuery === 'undefined') {
 
                 switch (true) {
                     // Only show the first error message if it is placed inside a tooltip ...
-                    case ($icon && 'tooltip' === container):
+                    case ('tooltip' === container):
                         (isValidField === false)
-                                ? $icon.css('cursor', 'pointer').tooltip('destroy').tooltip({
-                                    container: 'body',
+                                ? $field.css('cursor', 'pointer').tooltip('destroy').tooltip({
+                                    container: false,
                                     html: true,
                                     placement: 'auto top',
+                                    trigger: 'hover click focus manual',
                                     title: $allErrors.filter('[data-bv-result="' + that.STATUS_INVALID + '"]').eq(0).html()
                                 })
-                                : $icon.css('cursor', '').tooltip('destroy');
+                                : $field.css('cursor', '').tooltip('destroy');
                         break;
                     // ... or popover
-                    case ($icon && 'popover' === container):
+                    case ('popover' === container):
                         (isValidField === false)
-                                ? $icon.css('cursor', 'pointer').popover('destroy').popover({
-                                    container: 'body',
+                                ? $field.css('cursor', 'pointer').popover('destroy').popover({
+                                    container: false,
                                     content: $allErrors.filter('[data-bv-result="' + that.STATUS_INVALID + '"]').eq(0).html(),
                                     html: true,
                                     placement: 'auto top',
-                                    trigger: 'hover click'
+                                    trigger: 'hover click focus manual'
                                 })
-                                : $icon.css('cursor', '').popover('destroy');
+                                : $field.css('cursor', '').popover('destroy');
                         break;
                     default:
                         (status === this.STATUS_INVALID) ? $errors.show() : $errors.hide();
@@ -1655,21 +1657,21 @@ if (typeof jQuery === 'undefined') {
                         .removeAttr('data-bv-field');
 
                     // Remove feedback icons, tooltip/popover container
-                    $icon = $field.data('bv.icon');
-                    if ($icon) {
+                    //$icon = $field.data('bv.icon');
+                    //if ($icon) {
                         var container = ('function' === typeof (this.options.fields[field].container || this.options.container)) ? (this.options.fields[field].container || this.options.container).call(this, $field, this) : (this.options.fields[field].container || this.options.container);
                         switch (container) {
                             case 'tooltip':
-                                $icon.tooltip('destroy').remove();
+                                $field.tooltip('destroy').remove();
                                 break;
                             case 'popover':
-                                $icon.popover('destroy').remove();
+                                $field.popover('destroy').remove();
                                 break;
                             default:
-                                $icon.remove();
+                                $field.remove();
                                 break;
                         }
-                    }
+                    //}
                     $field.removeData('bv.icon');
 
                     for (validator in this.options.fields[field].validators) {

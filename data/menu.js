@@ -108,15 +108,14 @@ var menus = [{
             "name":"固定格式文本",
             "uri":"view/inputMsk.html",
             "childrens":[]        
+        },{
+            "id":"032",
+            "pid":"03",
+            "icon":"",
+            "name":"提示框",
+            "uri":"view/sweetAlert.html",
+            "childrens":[]        
         }
-//      ,{
-//          "id":"031",
-//          "pid":"03",
-//          "icon":"",
-//          "name":"表单向导",
-//          "uri":"view/formGuid.html",
-//          "childrens":[]        
-//      }
     ]
 }
 ]
