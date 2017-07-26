@@ -33,6 +33,13 @@ var menus = [{
             "name":"弹出表单",
             "uri":"view/addModal.html",
             "childrens":[]
+        },{
+            "id":"0143",
+            "pid":"01",
+            "icon":"",
+            "name":"表单向导",
+            "uri":"view/formWizard.html",
+            "childrens":[]
         }
 
     ]
