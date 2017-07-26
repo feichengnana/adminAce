@@ -33,6 +33,9 @@ a:hover{
 /*重写bootstrap 样式 */
 .input-group .form-control,.input-group-addon{border-color: #ECECEC;}
 .input-group-addon{background-color: #F0F4F5;color: #525355;}
+.form-control:focus,
+select:focus,.form-control:hover,
+select:hover{border-color:#66AFE9!important;}
 /*重写bootstrap 样式 -end*/
 
 /* 公共类 */
