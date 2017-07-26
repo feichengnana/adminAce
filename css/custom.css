@@ -30,6 +30,10 @@ a:hover{
 .no-skin .sidebar.menu-min{overflow: inherit;}
 /* 页面初始化/ */
 
+/*重写bootstrap 样式 */
+.input-group .form-control,.input-group-addon{border-color: #ECECEC;}
+.input-group-addon{background-color: #F0F4F5;color: #525355;}
+/*重写bootstrap 样式 -end*/
 
 /* 公共类 */
 
@@ -343,7 +347,7 @@ nav.page-tabs .page-tabs-content {
 }
 .dividerBox.dividerBox-primary>.dividerBox-title{
     padding:0;
-    line-height: 1.4;
+    line-height: 1.6;
     border-bottom: 1px dashed #659BE0;
 }
 .dividerBox.dividerBox-primary>.dividerBox-title>span{

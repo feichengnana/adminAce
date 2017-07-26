@@ -49,6 +49,7 @@ $('#dataTable').dataTable({
 			"data": "proId",
 			"title": "操作",
 			"width": "20",
+			"align": 'center',
 			"className": "text-center",
 			"render": function(a, b, c, d) {
 				var html = '<div class="btn-group btn-group-xs" style="width:130px">';

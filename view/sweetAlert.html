@@ -26,22 +26,100 @@
 					<h3 class="panel-title">信息提示与确认</h3>
 				</div>
 				<div class="panel-body">
-					<table class="table table-bordered">
-						<tr>
-							<td>基础</td>
-							<td><button id="alert1" class="btn btn-primary btn-sm">初体验</button></td>
-							<td>
-								<code>swal("您好！欢迎使用sweetAlert.js")</code>
-							</td>
-						</tr>
-					</table>
 					<div class="dividerBox dividerBox-primary dividerBox-blue">
-						<div class="dividerBox-title"><span>基础使用</span></div>
-						<div class="dividerBox-body">
-							<div class="row">
-								<div class="col-sm-5">
-									<button id="alert1" class="btn btn-primary">信息提示一</button>
-								</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<p>
+									<button id="alert1" class="btn btn-default">简单信息提示</button>
+								</p>
+								<pre>
+swal("您好！欢迎使用sweetAlert.js！")	</pre>
+							</div>
+							<div class="col-sm-6">
+								<p>
+									<button id="alert2" class="btn btn-default">主副标题提示</button>
+								</p>
+								<pre>
+swal("您好！欢迎使用sweetAlert.js！")	</pre>
+							</div>
+							<div class="col-sm-6">
+								<p>
+									<button id="alert3" class="btn btn-success">ICON Sucees</button>
+								</p>
+								<pre>
+swal("提示!", "您已操作成功!", "success")	</pre>
+							</div>
+							<div class="col-sm-6">
+								<p>
+									<button id="alert4" class="btn btn-warning">ICON Warning</button>
+								</p>
+								<pre>
+swal("提示!", "您的操作中存在一些问题，请修正!", "warning")	</pre>
+							</div>
+							<div class="col-sm-6">
+								<p>
+									<button id="alert5" class="btn btn-danger">ICON Error</button>
+								</p>
+								<pre>
+swal("提示!", "当前操作错误!", "error")</pre>
+							</div>
+							<div class="col-sm-6">
+								<p>
+									<button id="alert6" class="btn btn-info">ICON Info</button>
+								</p>
+								<pre>
+swal("提示!", "已完成!", "info")	</pre>
+							</div>
+							<div class="col-sm-6">
+								<p>
+									<button id="alert7" class="btn btn-warning">自定义取消按钮</button>
+								</p>
+								<pre>
+swal({
+	title:'提示',
+	text:'您确定要删除当前记录吗？',
+	type: "warning",
+	showCancelButton: true,
+	confirmButtonClass: "btn-danger",
+	confirmButtonText: "狠心删除！",
+	cancelButtonText: "取消",
+    closeOnConfirm: false,
+    closeOnCancel: false
+},
+function(isConfirm){
+	if(isConfirm){
+		swal("删除操作", "您已成功删除一条记录！", "success");
+	} else {
+	    swal("删除操作", "您已放弃删除此条记录！", "error");
+	}
+  
+})	</pre>
+							</div>
+							
+							<div class="col-sm-6">
+								<p>
+									<button id="alert8" class="btn btn-info">prompt提示框</button>
+								</p>
+								<pre>
+swal({
+	title:'请输入',
+	text:'为方便联系，您输入您的联系方式！',
+	type: "input",
+	inputPlaceholder: "请输入手机号码",
+	showCancelButton: true,
+	confirmButtonClass: "btn-info",
+	confirmButtonText: "确定！",
+	cancelButtonText: "取消",
+    closeOnConfirm: false
+},
+function(inputValue){
+	if (inputValue === false) return false;
+	if (inputValue === "") {
+	    swal.showInputError("请输入您的联系方式!");
+	    return false
+	}
+	swal("操作成功！","您输入的联系方式为: " + inputValue, "success");
+})</pre>
 							</div>
 						</div>
 					</div>
