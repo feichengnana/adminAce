@@ -127,19 +127,13 @@ $(function() {
 	});
 
 	$("#datetime").datepicker({
-		language: 'zh-CN',
-		autoclose:true,
-		format:'yyyy-mm-dd'
+		format: "yyyy-mm-dd"
 	});
 	$('select').select2({
 		theme: "bootstrap"
 	});
 	$('#datepickerRange').datepicker({
-		language: 'zh-CN',
-		minView: "month",
-		format: "yyyy-mm-dd",
-		autoclose: true,
-		todayBtn: true
+		format: "yyyy-mm-dd"
 	});
 
 })

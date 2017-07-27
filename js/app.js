@@ -51,7 +51,9 @@ $(function(){
 	
 	//重定义datePicker的默认值
 	if($.fn.datepicker){
-		$.fn.datepicker.defaults.format = "yyyy-mm-dd";
+		$.fn.datepicker.defaults.format = 'yyyy-mm-dd';
+		$.fn.datepicker.defaults.language = 'zh-CN';
+		$.fn.datepicker.defaults.autoclose = true;
 	}
 	
 })
