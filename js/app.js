@@ -48,6 +48,12 @@ $(function(){
 	        e.preventDefault();
 	    })
 	})
+	
+	//重定义datePicker的默认值
+	if($.fn.datepicker){
+		$.fn.datepicker.defaults.format = "yyyy-mm-dd";
+	}
+	
 })
 
 function scrollTo(el, offeset) {
