@@ -4,12 +4,18 @@ var menus = [{
     "icon":"glyphicon-th-large",
     "name":"页面模板",
     "uri":"",
-    "childrens":[
-    	{
+    "childrens":[{
+            "id":"011",
+            "pid":"01",
+            "icon":"",
+            "name":"数据列表页1",
+            "uri":"view/list-bt.html",
+            "childrens":[]
+        },{
             "id":"012",
             "pid":"01",
             "icon":"",
-            "name":"数据列表页",
+            "name":"数据列表页2",
             "uri":"view/list.html",
             "childrens":[]
         },{

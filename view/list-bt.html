@@ -9,12 +9,12 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../css/font-awesome.css" />
-		<link rel="stylesheet" type="text/css" href="../css/ace/ace.css" />
 		<link rel="stylesheet" type="text/css" href="../plugins/datatables/datatables.min.css" />
-		<link rel="stylesheet" type="text/css" href="../plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="../plugins/select2/css/select2.min.css" />
 		<link rel="stylesheet" type="text/css" href="../plugins/select2/css/select2-bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" />
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-table/bootstrap-table.min.css" />
+		<link rel="stylesheet" href="../plugins/bootstrap-table/extensions/fixed-columns/bootstrap-table-fixed-columns.css" />
 		<link rel="stylesheet" href="../css/custom.css" />
 
 		<!--[if lt IE 9]>
@@ -27,12 +27,7 @@
 		<div class="page-content">
 			<div class="panel panel-line">
 				<div class="panel-heading">
-					<h3 class="panel-title">工程订单管理-datatables.js</h3>
-					<div class="panel-actions">
-						<a href="javascript:;" class="btn btn-circle btn-sm btn-danger"><i class="ace-icon fa fa-plus-circle"></i> 新增</a>
-						<a href="javascript:;" class="btn btn-circle btn-sm btn-success"><i class="ace-icon fa fa-gear"></i> 其他操作按钮</a>
-						<a href="javascript:;" class="btn btn-circle btn-sm btn-info"><i class="ace-icon fa fa-sign-out"></i> 导出</a>
-					</div>
+					<h3 class="panel-title">工程订单管理-bootstrapTable.js</h3>
 				</div>
 				<div class="panel-body">
 					<div class="panel-search">
@@ -110,20 +105,27 @@
 					<div class="alert alert-info alert-mini">
 						预警图标说明：<i class="fa fa-warning text-danger"></i> 表示已超时 <i class="fa fa-bell-o text-warning"></i> 表示即将超时 <i class="fa fa-question-circle text-primary"></i> 表示还未维护项目编码
 					</div>
+					<div id="toolbar" class="btn-group">
+						<button id="btn_add" type="button" class="btn btn-danger"><i class="fa fa-plus-circle"></i> 新增</button>
+						<button id="btn_export" type="button" class="btn btn-warning"><i class="fa fa-close"></i> 删除</button>
+						<button id="btn_gear" type="button" class="btn btn-success"><i class="fa fa-gear"></i> 其他操作按钮</button>
+						<button id="btn_export" type="button" class="btn btn-info"><i class="fa fa-sign-out"></i> 导出</button>
+					</div>
 					<table class="table table-striped table-bordered table-hover table-checkable order-column" id="dataTable"></table>
 				</div>
 			</div>
 		</div>
 		<script src="../js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../plugins/datatables/datatables.all.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../plugins/select2/js/select2.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/bootstrap-table/bootstrap-table.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/bootstrap-table/extensions/fixed-columns/bootstrap-table-fixed-columns.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../data/datatable.js" type="text/javascript" charset="utf-8"></script>
-		<script src="list.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script src="list-bt.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 
 </html>
