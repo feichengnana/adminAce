@@ -29,12 +29,12 @@ a:hover{
 .no-skin .sidebar{overflow-y: auto;}
 .no-skin .sidebar.menu-min{overflow: inherit;}
 .form-control{padding-top: 6px;height:31px;}
-.select2-container--bootstrap .select2-selection--single{height:30px;padding:5px 4px 6px;line-height: 17px;border-color: #ECECEC;border-radius: 0;box-shadow: none;}
+.select2-container--bootstrap .select2-selection--single{height:31px;padding:5px 4px 6px;line-height: 18px;border-color: #C2CAD8;border-radius: 0;box-shadow: none;}
 .select2-container--bootstrap .select2-selection--single:hover{border-color: #66AFE9;}
 /* 页面初始化/ */
 
 /*重写bootstrap 样式 */
-.input-group .form-control,.input-group-addon{border-color: #ECECEC;}
+.input-group .form-control,.input-group-addon{border-color: #C2CAD8;}
 .input-group-addon{background-color: #F0F4F5;color: #525355;}
 .form-control:focus,
 select:focus,.form-control:hover,
@@ -369,7 +369,7 @@ nav.page-tabs .page-tabs-content {
     position: absolute;
     right:-16px;
     bottom:0;
-    border:8px solid #aaa;
+    border:8px solid #ccc;
     border-right-color: transparent;
     border-bottom-color: transparent;
 }
@@ -1038,7 +1038,7 @@ a.travis {
 }
 
 /*补充表单样式 */
-.input-group .input-group-btn>.btn{border:none;padding-top: 5px;padding-bottom: 5px;}
+.input-group .input-group-btn>.btn{border:none;padding-top: 6px;padding-bottom: 5px;}
 /*补充表单样式-end */
 
 /*补充有图标的表单 */

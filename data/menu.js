@@ -24,6 +24,13 @@ var menus = [{
             "pid":"01",
             "icon":"",
             "name":"表单分隔2",
+            "uri":"view/add3.html",
+            "childrens":[]
+        },{
+            "id":"014",
+            "pid":"01",
+            "icon":"",
+            "name":"表单分隔3",
             "uri":"view/add2.html",
             "childrens":[]
         },{

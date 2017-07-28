@@ -9,6 +9,8 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="../plugins/select2/css/select2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../plugins/select2/css/select2-bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/ace/ace.css" />
 		<link rel="stylesheet" href="../css/custom.css" />
 
@@ -171,8 +173,17 @@
 			</form>
 		</div>
 		<script src="../js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/select2/js/select2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/select2/js/i18n/zh-CN.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/app.js" type="text/javascript" charset="utf-8"></script>
-
+		<script type="text/javascript">
+			$(function(){
+				$('select').select2({
+					theme: "bootstrap"
+				});
+			})
+		</script>
 	</body>
 
 </html>
