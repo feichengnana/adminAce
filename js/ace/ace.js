@@ -69,8 +69,33 @@ jQuery(function($) {
 
 		ace.vars['transition'] = !!$.support.transition.end
 	}
-	
+	function menu(date,pid){
+		var menus=date;
+		var ulmain= $("#"+pid);
+		$.each(menus,function(index,menuinfo){
+			if(!jQuery.isEmptyObject(menuinfo.childrens)){
+				ulmain.append("<li class='' id="+menuinfo.id+"></li>");
+				$("#"+menuinfo.id).append("<a class='dropdown-toggle'  href='"+menuinfo.uri+"'"+"id='"+menuinfo.id+"a'></a>");
+				$("#"+menuinfo.id+"a").append("<span class='menu-icon "+((menuinfo.icon==''||menuinfo.icon==null)?"menu-icon fa fa-desktop":"glyphicon "+menuinfo.icon)+"'></span>");
+				$("#"+menuinfo.id+"a").append("<span class='menu-text'> "+menuinfo.name+" </span>");
+				$("#"+menuinfo.id+"a").append("<b class='arrow fa fa-angle-down'></b>");
+				$("#"+menuinfo.id).append("<b class='arrow'></b>");
+				$("#"+menuinfo.id).append("<ul class='submenu'"+" id="+menuinfo.id+"ul"+"></ul>");
+				var parent=menuinfo.id+"ul";
+				menu(menuinfo.childrens,parent);
+			}else{
+				ulmain.append("<li class='' id="+menuinfo.id+"></li>");
+				$("#"+menuinfo.id).append("<a class='dropdown-toggle J_menuItem' href='"+menuinfo.uri+"'"+"id='"+menuinfo.id+"a'></a>");
+				$("#"+menuinfo.id+"a").append("<span class='menu-icon "+((menuinfo.icon==''||menuinfo.icon==null)?"fa fa-caret-right":menuinfo.icon)+"'></span>");
+				$("#"+menuinfo.id+"a").append("<span class='menu-text'>"+menuinfo.name+"</span>");
+				$("#"+menuinfo.id).append("<b class='arrow'></b>");
+			};
+			});
+	}
 	function enableSidebar() {
+		if(ace_menus){
+			menu(ace_menus,"actionUl");
+		}
 		//initiate sidebar function
 		var $sidebar = $('.sidebar');
 		if($.fn.ace_sidebar) $sidebar.ace_sidebar();

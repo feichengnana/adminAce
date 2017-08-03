@@ -33,21 +33,21 @@ var menus = [{
             "uri":"view/add3.html",
             "childrens":[]
         },{
-            "id":"014",
+            "id":"015",
             "pid":"01",
             "icon":"",
             "name":"表单分隔3",
             "uri":"view/add2.html",
             "childrens":[]
         },{
-            "id":"0143",
+            "id":"016",
             "pid":"01",
             "icon":"",
             "name":"弹出表单",
             "uri":"view/addModal.html",
             "childrens":[]
         },{
-            "id":"0143",
+            "id":"017",
             "pid":"01",
             "icon":"",
             "name":"表单向导",
@@ -71,14 +71,14 @@ var menus = [{
             "uri":"view/layout.html",
             "childrens":[]        
         },{
-            "id":"021",
+            "id":"022",
             "pid":"02",
             "icon":"",
             "name":"按钮",
             "uri":"view/buttons.html",
             "childrens":[]        
         },{
-            "id":"021",
+            "id":"023",
             "pid":"02",
             "icon":"",
             "name":"工具类",
@@ -101,28 +101,28 @@ var menus = [{
             "uri":"view/bootstrapValidate.html",
             "childrens":[]        
         },{
-            "id":"031",
+            "id":"032",
             "pid":"03",
             "icon":"",
             "name":"树形、筛选操作",
             "uri":"view/treeSelect.html",
             "childrens":[]    
         },{
-            "id":"031",
+            "id":"033",
             "pid":"03",
             "icon":"",
             "name":"文件上传",
             "uri":"view/webUploader.html",
             "childrens":[]        
         },{
-            "id":"031",
+            "id":"034",
             "pid":"03",
             "icon":"",
             "name":"固定格式文本",
             "uri":"view/inputMsk.html",
             "childrens":[]        
         },{
-            "id":"032",
+            "id":"035",
             "pid":"03",
             "icon":"",
             "name":"提示框",

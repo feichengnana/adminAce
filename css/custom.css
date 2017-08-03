@@ -73,11 +73,6 @@ body.no-skin{overflow: hidden;}
 	vertical-align: middle;
 	margin-top: -5px;
 }
-.ace-nav{margin-top: 3px !important;}
-.ace-nav > li{border-left-color: #d11718;}
-.ace-nav > li > a{
-	background: #d11718 !important;
-}
 .main-container{position: absolute;left: 0;right: 0;top:50px;bottom: 0;transition: all .5s;}
 .hideNavbar #navbar{transition: all .5s;}
 .hideNavbar .main-container{top: 0;}
@@ -156,17 +151,17 @@ nav.page-tabs .page-tabs-content {
 }
 
 .roll-right.J_tabRight {
-	right: 40px
+	right: 80px
 }
 
 .roll-right.btn-group {
-	right: 60px;
-	width: 80px;
+	right: 40px;
+	width: 40px;
 	padding: 0
 }
 
 .roll-right.btn-group button {
-	width: 80px;
+	width: 40px;
 	white-space: nowrap;
 }
 
