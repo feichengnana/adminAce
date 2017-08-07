@@ -10,7 +10,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0002",
@@ -23,7 +28,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "",
 		"buildTypeName": "",
-		"proDate": "0"
+		"proDate": "0",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0003",
@@ -36,7 +46,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0004",
@@ -49,7 +64,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0005",
@@ -62,7 +82,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0006",
@@ -75,7 +100,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0007",
@@ -88,7 +118,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0007",
@@ -101,7 +136,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0009",
@@ -114,7 +154,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0010",
@@ -127,7 +172,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0011",
@@ -140,7 +190,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0012",
@@ -153,7 +208,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0013",
@@ -166,7 +226,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0014",
@@ -179,7 +244,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0015",
@@ -192,7 +262,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0016",
@@ -205,7 +280,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0017",
@@ -218,7 +298,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0018",
@@ -231,7 +316,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0019",
@@ -244,7 +334,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0020",
@@ -257,7 +352,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0021",
@@ -270,7 +370,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	},
 	{
 		"proId": "0022",
@@ -283,7 +388,12 @@ dataTableData = [
 		"providerUserName": "韩锟（济南）",
 		"buildSceneName": "新建",
 		"buildTypeName": "7天",
-		"proDate": "7"
+		"proDate": "7",
+		"other1":"其他字段1",
+		"other2":"其他字段2",
+		"other3":"其他字段3",
+		"other4":"其他字段4",
+		"other5":"其他字段5"
 	}
 ];
 

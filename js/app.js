@@ -12,13 +12,18 @@ function panelAction(el,parentEl,bodyEl,icon1,icon2,times){
 		var pnode = me.closest(parentEl);
 		var pbody = pnode.nextAll(bodyEl).first();
 		var meicon = me.find('.fa');
-		console.log(meicon.attr('class'))
 		if(times!=0){
 			times = times?times:200;
 		}
 		pbody.slideToggle(times);
 		meicon.toggleClass(icon1).toggleClass(icon2);
-		console.log(meicon.attr('class'))
+		if(el == '.panel-search-more a'){
+			console.log(11111);
+			var panelSearch = me.closest('.panel-search');
+			var resetBtn = panelSearch.find('.panel-search-action').find('button[type=reset]');
+			console.log(resetBtn);
+			resetBtn.toggleClass('hidden');
+		}
 	})
 }
 

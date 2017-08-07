@@ -94,6 +94,6 @@ $(function() {
 
 	$('#form_wizard_1').find('.button-previous').hide();
 	$('#form_wizard_1 .button-submit').click(function() {
-		alert('Finished! Hope you like it :)');
+		alert('可以进行提交处理了~~');
 	}).hide();
 })

@@ -4,6 +4,13 @@ var option =   {
         trigger: 'item',
         formatter: "{a} <br/>{b} : {c}"
     },
+    grid:{
+    	
+    	x:0,
+    	y:0,
+    	x2:0,
+    	y2:0
+    },
     legend: {
         orient : 'horizontal',
         x : 'left',
@@ -88,6 +95,11 @@ var option2 =  {
     	show:false,
     	data:['项目数量']
     },
+    grid:{
+    	x:25,
+    	x2:40,
+    	y2:20
+    },
     toolbox: {
         show : true,
         feature : {
@@ -149,6 +161,11 @@ var option3 =  {
             restore : {show: true},
             saveAsImage : {show: true}
         }
+    },
+    grid:{
+    	x:25,
+    	x2:40,
+    	y2:20
     },
     calculable : true,
     legend: {

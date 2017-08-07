@@ -37,24 +37,21 @@ $(function() {
 		showToggle: true, //是否显示详细视图和列表视图的切换按钮
 		cardView: false, //是否显示详细视图
 		detailView: false, //是否显示父子表
-//		fixedColumns: true,
-//		fixedNumber:2,
+		singleSelect:true,
+		fixedColumns: true,
+		fixedNumber:3,
 		columns: [{
-                "checkbox": true,
-                "align": 'center',
-                "valign":"middle"
+                "radio": true,
+                "align": 'center'
             },
 			{
 				"field": "proId",
 				"title": "操作",
-				"width": "100",
+				"width": "80",
 				"align": 'center',
-				"valign":"middle",
 				"formatter": function(value,row,index) {
-					var html = '<div class="btn-group btn-group-sm" style="width:70px;">';
-					html += '<button type="button" title="查看" class="btn btn-info"><i class="fa fa-search-plus"></i></button>';
-					html += '<button type="button" title="编辑" class="btn btn-warning"><i class="fa fa-edit"></i></button>';
-					html += '</div>';
+					var html = '<a title="查看" href="javascript:;" class="table-link"><i class="fa fa-search-plus"></i></a>';
+						html += '<a title="编辑" href="javascript:;" class="table-link"><i class="fa fa-edit"></i></a>'
 					return html;
 				}
 			},
@@ -62,71 +59,91 @@ $(function() {
 				"field": "proName",
 				"title": "工单名称",
 				"width": '160',
-				"align": 'left',
-				"valign":"middle"
+				"align": 'left'
 			},
 			{
 				"field": "busiCode",
 				"title": "工单编码",
 				"width": '120',
-				"align": 'center',
-				"valign":"middle"
+				"align": 'center'
 			},
 			{
 				"field": "proCode",
 				"title": "项目编码",
 				"width": '120',
-				"align": 'center',
-				"valign":"middle"
+				"align": 'center'
 			},
 			{
 				"field": "cityName",
 				"title": "地市",
 				"width": '90',
-				"align": 'left',
-				"valign":"middle"
+				"align": 'left'
 			},
 			{
 				"field": "disName",
 				"title": "区县",
 				"width": '90',
-				"align": 'left',
-				"valign":"middle"
+				"align": 'left'
 			},
 			{
 				"field": "providerName",
 				"title": "工程服务商",
 				"width": '150',
-				"align": 'left',
-				"valign":"middle"
+				"align": 'left'
 			},
 			{
 				"field": "providerUserName",
 				"title": "工单接收人",
 				"width": '100',
-				"align": 'left',
-				"valign":"middle"
+				"align": 'left'
 			},
 			{
 				"field": "buildSceneName",
 				"title": "建设性质",
 				"width": '100',
-				"align": 'center',
-				"valign":"middle"
+				"align": 'center'
 			},
 			{
 				"field": "buildTypeName",
 				"title": "建设时限",
 				"width": '100',
-				"align": 'center',
-				"valign":"middle"
+				"align": 'center'
 			},
 			{
 				"field": "proDate",
 				"title": "归属工期（天）",
 				"width": '100',
-				"align": 'center',
-				"valign":"middle"
+				"align": 'center'
+			},
+			{
+				"field": "other1",
+				"title": "其他字段1",
+				"width": '100',
+				"align": 'center'
+			},
+			{
+				"field": "other2",
+				"title": "其他字段2",
+				"width": '100',
+				"align": 'center'
+			},
+			{
+				"field": "other3",
+				"title": "其他字段2",
+				"width": '100',
+				"align": 'center'
+			},
+			{
+				"field": "other4",
+				"title": "其他字段2",
+				"width": '100',
+				"align": 'center'
+			},
+			{
+				"field": "other5",
+				"title": "其他字段2",
+				"width": '100',
+				"align": 'center'
 			}
 		]
 	})
