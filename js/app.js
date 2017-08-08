@@ -277,7 +277,7 @@ var App = function(){
 
         stopPageLoading: function() {
             $('.page-loading, .page-spinner-bar').remove();
-        },
+        }
 
     }
 
@@ -285,4 +285,10 @@ var App = function(){
 
 jQuery(document).ready(function() {    
     App.init(); // init metronic core componets
+    $(window).resize(function(){
+    	App.destroySlimScroll('.page-content.scroller');
+    	App.initSlimScroll('.page-content.scroller');
+    	App.destroySlimScroll('#sidebar .scroller');
+    	App.initSlimScroll('#sidebar .scroller');
+    })
 });
