@@ -1,3 +1,8 @@
+pdfMake.fonts  = {
+  msyh: {
+     normal: 'msyh.ttf'
+  }
+};
 $(function() {
 	var table = $('#dataTable').dataTable({
 		"columns": [{

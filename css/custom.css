@@ -1,6 +1,6 @@
 /* 页面初始化 */
 html,body,.page-content{
-	min-height:100%;
+	height:100%;
 }
 a:hover{
 	text-decoration: none;
@@ -9,7 +9,7 @@ a:hover{
 
 /* 工具类 */
 .display-hide, .display-none{display: none;}
-.page-content{padding:10px 5px;overflow: auto;}
+.page-content{padding:10px;overflow-y: auto;overflow-x: hidden;}
 .bg-main {background: #d11718 !important;}
 .bg-white{background-color: #FFF!important;}
 .btn-circle{border-radius: 25px !important;overflow: hidden;}
@@ -47,7 +47,7 @@ select:hover{border-color:#66AFE9!important;}
 
 /* 页面布局 */
 body.no-skin{overflow: hidden;}
-.no-skin .sidebar{overflow-y: auto;}
+.no-skin .sidebar{overflow:hidden;height: 100%;}
 .no-skin .sidebar.menu-min{overflow: inherit;}
 #navbar.navbar .navbar-brand {
 	padding: 0 15px;
@@ -167,8 +167,8 @@ nav.page-tabs .page-tabs-content {
 
 #content-main {
 	position: absolute;
-	left: 15px;
-	right: 15px;
+	left: 10px;
+	right: 10px;
 	top: 41px;
 	bottom: 0;
 	overflow: hidden;

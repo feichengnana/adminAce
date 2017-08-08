@@ -79,29 +79,14 @@
             <a id="navbar-show" href="javascript:;"> <i class="ace-icon fa fa-bars"></i> 展示菜单 </a>
         </div>
         <div id="pageVM" class="main-container">
-            <div id="sidebar" class="sidebar responsive">
-                <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
-                    <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
-                </div>
-                <ul class="nav nav-list" id="actionUl">
-                    <!--<li v-for="item in menus">
-                        <a class="dropdown-toggle" href="javascript:;" date-info="">
-                            <span class="menu-icon glyphicon glyphicon-th-large" v-bind:class="item.icon"></span>
-                            <span class="menu-text" v-text="item.name">  </span>
-                            <b class="arrow fa fa-angle-down"></b>
-                        </a>
-                        <b class="arrow"></b>
-                        <ul class="submenu">
-                            <li v-for="citem in item.childrens">
-                                <a class="J_menuItem dropdown-toggle" id="300a" v-bind:href="citem.uri">
-                                    <span class="menu-icon fa fa-caret-right"></span>
-                                    <span class="menu-text" v-text="citem.name"></span>
-                                </a>
-                                <b class="arrow"></b>
-                            </li>
-                        </ul>
-                    </li>-->
-                </ul>
+            <div id="sidebar" class="sidebar responsive ">
+            	<div class="scroller" style="height:100%;">
+            		<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+	                    <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+	                </div>
+	                <ul class="nav nav-list" id="actionUl">
+	                </ul>
+            	</div>
             </div>
             <div class="main-content">
                 <div class="row content-tabs">
@@ -133,9 +118,11 @@
         </div>
         <script src="plugins/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="plugins/bootstrap/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/ace/ace.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/ace/ace.sidebar.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/contabs.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/app.min.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript">
             var $hidemenu = $('#hidemenu');
             $hidemenu.click(function() {
