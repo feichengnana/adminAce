@@ -8,14 +8,14 @@ var menus = [{
             "id":"011",
             "pid":"01",
             "icon":"",
-            "name":"数据列表页1",
-            "uri":"view/list-bt.html",
+            "name":"数据列表页",
+            "uri":"view/list.html",
             "childrens":[]
         },{
             "id":"012",
             "pid":"01",
             "icon":"",
-            "name":"数据列表页2",
+            "name":"数据列表页-固定高度",
             "uri":"view/list.html",
             "childrens":[]
         },{

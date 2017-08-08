@@ -9,8 +9,10 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/bootstrap.min.css" />
 		<link rel="stylesheet" href="../plugins/font-awesome/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" href="../plugins/datatables/datatables.min.css" />
-		<link rel="stylesheet" type="text/css" href="../plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../plugins/datatables/css/dataTables.bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../plugins/datatables/extensions/FixedColumns/fixedColumns.bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../plugins/datatables/extensions/Buttons/buttons.dataTables.css"/>
+		<link rel="stylesheet" type="text/css" href="../plugins/datatables/extensions/Buttons/buttons.bootstrap.css"/>
 		<link rel="stylesheet" type="text/css" href="../plugins/select2/css/select2.min.css" />
 		<link rel="stylesheet" type="text/css" href="../plugins/select2/css/select2-bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css"/>
@@ -27,11 +29,6 @@
 			<div class="panel panel-line">
 				<div class="panel-heading">
 					<h3 class="panel-title">工程订单管理-datatables.js</h3>
-					<div class="panel-actions">
-						<a href="javascript:;" class="btn btn-circle btn-sm btn-danger"><i class="ace-icon fa fa-plus-circle"></i> 新增</a>
-						<a href="javascript:;" class="btn btn-circle btn-sm btn-success"><i class="ace-icon fa fa-gear"></i> 其他操作按钮</a>
-						<a href="javascript:;" class="btn btn-circle btn-sm btn-info"><i class="ace-icon fa fa-sign-out"></i> 导出</a>
-					</div>
 				</div>
 				<div class="panel-body">
 					<div class="panel-search">
@@ -66,7 +63,7 @@
 									<a href="javascript:;">更多搜索 <i class="fa fa-angle-double-right"></i></a>
 								</div>
 								<div class="panel-search-moreBody">
-									<div class="col-sm-4 col-sm-6">
+									<div class="col-sm-4">
 										<div class="input-daterange input-group" id="datepickerRange">
 											<span class="input-group-addon">时间段</span>
 											<input type="text" class="input-sm form-control" name="start" />
@@ -101,13 +98,23 @@
 								</div>
 							</div>
 							<div class="panel-search-action">
-								<button type="button" class="btn btn-sm btn-danger"><i class="ace-icon fa fa-search"></i> 查询</button>
-								<button type="reset" class="btn btn-sm btn-warning"><i class="ace-icon fa fa-repeat"></i> 重置</button>
+								<button type="button" class="btn btn-block btn-danger"><i class="ace-icon fa fa-search"></i> 查询</button>
+								<button type="reset" class="btn btn-block btn-warning hidden"><i class="ace-icon fa fa-repeat"></i> 重置</button>
 							</div>
 						</form>
 					</div>
 					<div class="alert alert-info alert-mini">
 						预警图标说明：<i class="fa fa-warning text-danger"></i> 表示已超时 <i class="fa fa-bell-o text-warning"></i> 表示即将超时 <i class="fa fa-question-circle text-primary"></i> 表示还未维护项目编码
+					</div>
+					<div id="toolbars" class="hidden">
+						<div class="btn-group">
+							<button type="button" onclick="addItem()" class="btn btn-danger"><i class="fa fa-plus-circle"></i> 新增</button>
+							<button type="button" class="btn btn-warning"><i class="fa fa-times"></i> 删除</button>
+						</div>
+						<div class="btn-group">
+							<button type="button" class="btn btn-default"><i class="fa fa-gear"></i> 其他操作</button>
+							<button type="button" class="btn btn-default"><i class="fa fa-gear"></i> 其他操作</button>
+						</div>
 					</div>
 					<table class="table table-striped table-bordered table-hover table-checkable order-column" id="dataTable"></table>
 				</div>
@@ -115,8 +122,21 @@
 		</div>
 		<script src="../plugins/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../plugins/bootstrap/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../plugins/datatables/datatables.all.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/datatables/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/datatables/js/dataTables.bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--表格-固定列-->
+		<script src="../plugins/datatables/extensions/FixedColumns/dataTables.fixedColumns.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--表格-按钮-->
+		<script src="../plugins/datatables/extensions/Buttons/dataTables.buttons.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/datatables/extensions/Buttons/buttons.bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<!--表格-按钮-打印、复制、列选、pdf-->
+		<script src="../plugins/jszip.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/pdfmake.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/vfs_fonts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/datatables/extensions/Buttons/buttons.html5.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/datatables/extensions/Buttons/buttons.print.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/datatables/extensions/Buttons/buttons.colVis.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--表格-结束-->
 		<script src="../plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../plugins/select2/js/select2.min.js" type="text/javascript" charset="utf-8"></script>

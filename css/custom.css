@@ -1,6 +1,6 @@
 /* 页面初始化 */
 html,body,.page-content{
-	height:100%;
+	min-height:100%;
 }
 a:hover{
 	text-decoration: none;
@@ -15,6 +15,8 @@ a:hover{
 .btn-circle{border-radius: 25px !important;overflow: hidden;}
 .alert-mini{padding:10px;margin-bottom: 15px;}
 .text-red{color: #E43A45;}
+.inline-block{display: inline-block;}
+.mr-10{margin-right: 10px;}
 /* 工具类-end */
 
 /* 重置样式 */
@@ -383,11 +385,6 @@ nav.page-tabs .page-tabs-content {
     padding:2px 8px;
 }
 .dividerBox.dividerBox-spinner>.dividerBox-body{padding:0 15px;}
-/* dividerBox颜色设置 */
-.dividerBox.dividerBox-blue>.dividerBox-toolbar>a{color: #337AB7;}
-.dividerBox.dividerBox-green>.dividerBox-toolbar>a{color: #36C6D3;}
-.dividerBox.dividerBox-red>.dividerBox-toolbar>a{color: #ED6B75;}
-.dividerBox.dividerBox-yellow>.dividerBox-toolbar>a{color: #F1C40F;}
 .dividerBox.dividerBox-spinner.dividerBox-blue>.dividerBox-title,
 .dividerBox.dividerBox-primary.dividerBox-blue>.dividerBox-title>span{
     background-color: #659BE0;
