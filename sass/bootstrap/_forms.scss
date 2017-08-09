@@ -128,10 +128,15 @@ output {
 
   // Customize the `:focus` state to imitate native WebKit styles.
   @include form-control-focus;
-
+    
   // Placeholder
   @include placeholder;
-
+  &:focus {
+      border-color: $input-border-focus;
+  }
+  &:hover {
+      border-color: $input-border-focus;
+  }
   // Unstyle the caret on `<select>`s in IE10+.
   &::-ms-expand {
     border: 0;

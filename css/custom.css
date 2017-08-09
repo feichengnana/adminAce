@@ -32,9 +32,9 @@ a:hover{
 .table > thead > tr > th{font-weight: normal;}
 .input-group .form-control,.input-group-addon{border-color: #C2CAD8;}
 .input-group-addon{background-color: #F0F4F5;color: #525355;}
-.form-control:focus,
+/*.form-control:focus,
 select:focus,.form-control:hover,
-select:hover{border-color:#66AFE9!important;}
+select:hover{border-color:#66AFE9!important;}*/
 /* 重置样式 -end */
 
 .list-group-item.bg-warning{background-color: #fcf8e3;}
@@ -333,24 +333,14 @@ nav.page-tabs .page-tabs-content {
 .dividerBox.dividerBox-primary>.dividerBox-title{
     padding:0;
     line-height: 1.6;
-    border-bottom: 1px dashed #659BE0;
+    border-bottom: 1px dashed #E2E2E2;
 }
 .dividerBox.dividerBox-primary>.dividerBox-title>span{
     position: relative;
-    bottom:-1px;
+    bottom:-2px;
     display: inline-block;
-    padding:6px 20px;
-    background-color: #659BE0;
-    color: #FFF;
-}
-.dividerBox.dividerBox-primary>.dividerBox-title>span:after{
-    content: '';
-    position: absolute;
-    right:-16px;
-    bottom:0;
-    border:8px solid #ccc;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
+    padding:6px 15px;
+    border-bottom: 3px solid #659BE0;
 }
 .dividerBox.dividerBox-spinner{
     padding-top: 30px;
@@ -385,29 +375,37 @@ nav.page-tabs .page-tabs-content {
     padding:2px 8px;
 }
 .dividerBox.dividerBox-spinner>.dividerBox-body{padding:0 15px;}
-.dividerBox.dividerBox-spinner.dividerBox-blue>.dividerBox-title,
-.dividerBox.dividerBox-primary.dividerBox-blue>.dividerBox-title>span{
+.dividerBox.dividerBox-spinner.dividerBox-blue>.dividerBox-title{
     background-color: #659BE0;
     color: #FFF;
 }
-.dividerBox.dividerBox-spinner.dividerBox-green>.dividerBox-title,
-.dividerBox.dividerBox-primary.dividerBox-green>.dividerBox-title>span{
+.dividerBox.dividerBox-primary.dividerBox-blue>.dividerBox-title>span{
+	border-bottom-color: #659BE0;
+}
+.dividerBox.dividerBox-spinner.dividerBox-green>.dividerBox-title{
     background-color: #36C6D3;
     color: #FFF;
 }
-.dividerBox.dividerBox-spinner.dividerBox-red>.dividerBox-title,
-.dividerBox.dividerBox-primary.dividerBox-red>.dividerBox-title>span{
+.dividerBox.dividerBox-primary.dividerBox-green>.dividerBox-title>span{
+	border-bottom-color: #36C6D3;
+}
+.dividerBox.dividerBox-spinner.dividerBox-red>.dividerBox-title{
     background-color: #ED6B75;
     color: #FFF;
 }
-.dividerBox.dividerBox-spinner.dividerBox-yellow>.dividerBox-title,
-.dividerBox.dividerBox-primary.dividerBox-yellow>.dividerBox-title>span{
+.dividerBox.dividerBox-primary.dividerBox-red>.dividerBox-title>span{
+	border-bottom-color: #ED6B75;
+}
+.dividerBox.dividerBox-spinner.dividerBox-yellow>.dividerBox-title{
     background-color: #F4D03F;
 }
-.dividerBox.dividerBox-primary.dividerBox-blue>.dividerBox-title{border-bottom-color:#659BE0 }
+.dividerBox.dividerBox-primary.dividerBox-yellow>.dividerBox-title>span{
+	border-bottom-color: #F4D03F;
+}
+/*.dividerBox.dividerBox-primary.dividerBox-blue>.dividerBox-title{border-bottom-color:#659BE0 }
 .dividerBox.dividerBox-primary.dividerBox-green>.dividerBox-title{border-bottom-color:#36C6D3 }
 .dividerBox.dividerBox-primary.dividerBox-red>.dividerBox-title{border-bottom-color:#ED6B75 }
-.dividerBox.dividerBox-primary.dividerBox-yellow>.dividerBox-title{border-bottom-color:#F1C40F }
+.dividerBox.dividerBox-primary.dividerBox-yellow>.dividerBox-title{border-bottom-color:#F1C40F }*/
 /* 表单间隔-end */
 
 /* 表单 */
@@ -1116,3 +1114,21 @@ a.travis {
 .table-link:last-child{margin-right: 0;}
 .table-link:hover{color: #D11718;}
 /* 表格-end */
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track {
+    border: 1px #f5f5f5 solid;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+    border: 1px #ccc solid;
+    border-radius: 10px;
+    background: #d5d5d5;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #bbb;
+}

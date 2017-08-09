@@ -11,13 +11,13 @@ var menus = [{
             "name":"数据列表页",
             "uri":"view/list.html",
             "childrens":[]
-        },{
-            "id":"012",
-            "pid":"01",
-            "icon":"",
-            "name":"数据列表页-固定高度",
-            "uri":"view/list.html",
-            "childrens":[]
+//      },{
+//          "id":"012",
+//          "pid":"01",
+//          "icon":"",
+//          "name":"数据列表页-固定高度",
+//          "uri":"view/list.html",
+//          "childrens":[]
         },{
             "id":"013",
             "pid":"01",
